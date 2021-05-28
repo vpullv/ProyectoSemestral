@@ -4,6 +4,7 @@ Integrantes del PROYECTO SEMESTRAL
   -- Sebastian Medina
   -- Jessica Gallinato
   -- Antonia Acosta
+  -- Fabiana Narvaez
 }
 
 Nuestro PROYECTO:
