@@ -1,0 +1,22 @@
+Integrantes del PROYECTO SEMESTRAL
+{
+  -- Sebastian Medina
+  -- Jessica Gallinato
+  -- Antonia Acosta
+}
+
+Nuestro PROYECTO:
+Es una plataforma dedicada a la informacion detallada de productos para pc (NO ES PARA COMPRA NI VENTA) solo para
+ver las especificaciones, compatibilidades y en un futuro las cotizaciones de distindas tiendas. Ahora solo va a 
+ser con un precio medio del mercado.
+
+Nuestra PLANTILLA:
+https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+
+(En el inicio esta aun en desarrollo con el diseño)
+
+IMPORTANTE -- NUESTRO AVANCE --
+
+-- Api de cambio de moneda (INDEX)
+-- Form de login y register (LOGIN Y REGISTER)
+-- Form de contacto (CONTACTO)

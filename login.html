@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <script src="assets/js/Jquery_3.6.0.js"></script>
+    <link rel="stylesheet" href="assets/css/formulario.css">
+</head>
+<body>
+    <form action="#" id="register" name="register" method="POST">
+        <div class="form_register">
+            <div class="form_tittle">
+                <h3>Logeate en CASITODO</h3>
+            </div>
+
+            <hr class="hr">
+
+            <!-- CORREO -->
+            <div class="container_input">
+                <div class="input_box">
+                    <input class="inputs" type="text" name="txtCorreo" id="txtCorreo" placeholder="Correo">
+                </div>
+
+                <div class="alerta_error" id="DivAlerta3">
+                    ↑ El correo no es valido
+                </div>
+            </div>
+
+            <!-- CONTRASEÑA -->
+            <div class="container_input">
+                <div class="input_box">
+                    <input class="inputs" type="password" name="txtContra" id="txtContra" placeholder="Contraseña">
+                </div>
+
+                <div class="alerta_error" id="DivAlerta4">
+                    ↑ La contraseña no coincide
+                </div>
+            </div>
+
+            <!-- MENSAJES ALERT -->
+
+            <div class="alerta_msj" id="DivAlerta_error">
+                Error en el inicio de sesión
+            </div>
+
+            <!-- BOTON -->
+            <div class="container_button">
+                <button onclick="location.href='index.html'">iniciar sesión</button>
+            </div>
+
+            <hr class="hr">
+            <p><a href="register.html">¿No tienes una cuenta? Registrate</a></p>
+        </div>
+    </form>
+</body>
+<script>
+    var contraPatron = new RegExp("^[a-zA-Z0-9 ]{5,30}$");
+    var correoPatron = new RegExp("^[a-zA-Z0-9._-]+@[a-zA-Z0-9.]+.[a-zA-Z]{2,4}$");
+
+    function valida_Patron(id_Patron, Patron){
+        return $(id_Patron).val().match(Patron) ? true : false;
+    }
+
+    $(
+        function(){
+            $("#register").submit(
+                function(e){
+                    var bandera = true;
+
+                    if(!valida_Patron("#txtCorreo", correoPatron))
+                    {
+                        bandera = false;
+                        $("#DivAlerta3").show();
+                    }
+
+                    if(!valida_Patron("#txtContra", contraPatron))
+                    {
+                        bandera = false;
+                        $("#DivAlerta4").show();
+                    }
+                
+                    if(!bandera)
+                    {
+                        $("#DivAlerta_error").show();
+                        e.preventDefault();
+                    }
+
+                    else
+                    {
+                        alert("Registro completado");
+                    }
+                }
+            );
+
+            $("#txtCorreo").focusin(
+                function()
+                {
+                    $("#DivAlerta1").hide();
+                    $("#DivAlerta2").hide();
+                    $("#DivAlerta3").hide();
+                    $("#DivAlerta4").hide();
+                    $("#DivAlerta5").hide();
+                    $("#DivAlerta_error").hide();
+                }
+            );
+
+            $("#txtContra").focusin(
+                function()
+                {
+                    $("#DivAlerta1").hide();
+                    $("#DivAlerta2").hide();
+                    $("#DivAlerta3").hide();
+                    $("#DivAlerta4").hide();
+                    $("#DivAlerta5").hide();
+                    $("#DivAlerta_error").hide();
+                }
+            );
+        }
+    );
+</script>
+
+</html>

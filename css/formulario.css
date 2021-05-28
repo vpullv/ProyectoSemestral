@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 254, 251);
+}
+
+.form_register{
+    width: 350px;
+    background: #2C1833;
+    padding: 30px;
+    margin: auto;
+    margin-top: 70px;
+    border-radius: 10px;
+    font-family: 'calibri';
+    text-align: center;
+    color: white;
+    box-shadow: 10px 10px 30px #000;
+}
+
+.form_tittle h3{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.container_input{
+    margin: 20px 0px 20px 0px;
+}
+
+.input_box{
+    margin-right: 20px;
+    
+
+}
+
+.inputs{
+    width: 100%;
+    background: #ffffff1e;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: 'calibri';
+    font-size: 15px;
+    color: white;
+    outline: none;
+}
+
+.form_register button{
+    width: 100%;
+    background: #CB6CE6;
+    border: none;
+    border-radius: 20px;
+    padding: 12px;
+    color: black;
+    margin: 16px 0;
+    font-size: 16px;
+    outline: none;
+}
+
+
+.form_register button:hover{
+    background-color: #b05ec7;
+    color: white;
+}
+
+.hr {
+    background-color: white;
+}
+
+.form_register a{
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+
+}
+
+.form_register a:hover{
+    color: #CB6CE6;
+    text-decoration: none;
+}
+
+.form_contact button{
+    width: 100%;
+    background: #CB6CE6;
+    border: none;
+    border-radius: 20px;
+    padding: 12px;
+    color: black;
+    margin: 16px 0;
+    font-size: 16px;
+    outline: none;
+}
+
+.form_contact button:hover{
+    background-color: #b05ec7;
+    color: white;
+}
+
+.alerta_error{
+    display: none;
+    font-size: 10px;
+    color: red;
+    text-shadow: black;
+    padding: 0%;
+}
+
+.alerta_msj{
+    display: none;
+    background-color: rgba(255, 0, 0, 0.123);
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 10px;
+}
+
+.input_error{
+    border: solid 2px red;
+    background-color: red;
+    color: red;
+}
